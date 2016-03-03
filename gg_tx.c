@@ -1,16 +1,28 @@
-/* ht8.c
- * halt-time toolkit
+/* gg_tx.c
+ * goofy glasses tx toolkit
  * compile: gcc -O2 ht8.c -lftdi -lncurses -o ht8
  * this program transmits dmx-style rgb packets
  * 
- * broadcasts from PC/Xbee to Mrf/Arduino
+ * broadcasts from PC/XBEE S1 to Mrf24j40m/Atmega328
  *
- * 
  * Benjamin Jeffery
  * University of Idaho
+ * jeff7981@vandals.uidaho.edu
  * 10/14/2015
- * millisec() is copied from unicon/src/common/time.c 
- * for testing purposes. Thanks Clint
+ *
+ * Copyright 2015, Benjamin Jeffery
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public Licese as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
 #include <ftdi.h>
